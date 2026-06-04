@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pop1.nl</title>
+<title>Pop1.nl Collectibles</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
     background:#0a0a0a;
-    color:white;
+    color:#ffffff;
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -26,36 +26,36 @@ body{
 .container{
     width:100%;
     max-width:700px;
-    background:#111;
-    border:1px solid #222;
-    border-radius:20px;
-    padding:40px;
+    background:linear-gradient(180deg,#111111,#0d0d0d);
+    border:1px solid #2b2b2b;
+    border-radius:24px;
+    padding:50px 40px;
     text-align:center;
-    box-shadow:0 0 30px rgba(255,255,255,0.05);
+    box-shadow:
+        0 0 40px rgba(255,184,0,0.08),
+        0 0 80px rgba(0,0,0,0.6);
 }
 
-.logo{
-    width:180px;
-    height:180px;
-    margin:0 auto 30px;
-    border:2px dashed #333;
-    border-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#777;
-    font-size:18px;
+.logo-img{
+    width:280px;
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:0 auto 25px;
+    filter:drop-shadow(0 0 20px rgba(255,184,0,0.4));
 }
 
 h1{
-    font-size:2rem;
+    font-size:2.4rem;
     margin-bottom:15px;
+    color:#ffffff;
 }
 
 .subtitle{
-    color:#aaa;
+    color:#bdbdbd;
     margin-bottom:35px;
-    line-height:1.6;
+    line-height:1.7;
+    font-size:1.05rem;
 }
 
 .button{
@@ -67,9 +67,10 @@ h1{
     padding:18px;
     margin-bottom:15px;
     border-radius:12px;
-    transition:0.3s;
+    transition:all 0.3s ease;
     border:1px solid #333;
     font-weight:bold;
+    font-size:16px;
 }
 
 .button:hover{
@@ -86,6 +87,16 @@ h1{
     background:#20ba5a;
 }
 
+.wantlist{
+    background:#ffb800;
+    color:#000;
+    border:none;
+}
+
+.wantlist:hover{
+    background:#ffc633;
+}
+
 .footer{
     margin-top:30px;
     color:#777;
@@ -94,32 +105,37 @@ h1{
 </style>
 
 </head>
+
 <body>
 
 <div class="container">
 
-    <!-- LOGO -->
-<img src="8C5D3A14-1B68-4E62-8E57-13F573A18E24.png" alt="Pop1.nl Logo" class="logo-img">
+    <img src="8C5D3A14-1B68-4E62-8E57-13F573A18E24.png"
+         alt="Pop1.nl Collectibles Logo"
+         class="logo-img">
 
-    <h1>Pop1.nl</h1>
+    <h1>Pop1.nl Collectibles</h1>
 
     <p class="subtitle">
-        Welkome to Pop1.nl.<br>
-        This website is under construction.
+        Welcome to Pop1.nl Collectibles.<br>
+        Our website is currently under construction.<br>
+        Feel free to contact us via WhatsApp or view our Pokémon wantlist below.
     </p>
 
-    <a class="button whatsapp" href="https://wa.me/31617158908">
+    <a class="button whatsapp"
+       href="https://wa.me/31617158908"
+       target="_blank">
         📞 WhatsApp: +31 6 17158908
     </a>
 
-    <a class="button"
+    <a class="button wantlist"
        href="https://docs.google.com/spreadsheets/d/1SUQpx0raMMK86jrI-5VEiXBMl53Vd9NOrDrJdLKFNNM/edit?usp=drivesdk"
        target="_blank">
-       📋 Pokémon Wantlist
+        📋 View Pokémon Wantlist
     </a>
 
     <div class="footer">
-        © 2026 Pop1.nl
+        © 2025 Pop1.nl Collectibles
     </div>
 
 </div>
