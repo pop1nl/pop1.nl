@@ -1,25 +1,130 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pop1.nl</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop1.nl</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    background:#111;
+    border:1px solid #222;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(255,255,255,0.05);
+}
+
+.logo{
+    width:180px;
+    height:180px;
+    margin:0 auto 30px;
+    border:2px dashed #333;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#777;
+    font-size:18px;
+}
+
+h1{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    color:#aaa;
+    margin-bottom:35px;
+    line-height:1.6;
+}
+
+.button{
+    display:block;
+    width:100%;
+    text-decoration:none;
+    color:white;
+    background:#1f1f1f;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:12px;
+    transition:0.3s;
+    border:1px solid #333;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#2d2d2d;
+    transform:translateY(-2px);
+}
+
+.whatsapp{
+    background:#25D366;
+    border:none;
+}
+
+.whatsapp:hover{
+    background:#20ba5a;
+}
+
+.footer{
+    margin-top:30px;
+    color:#777;
+    font-size:14px;
+}
+</style>
+
 </head>
 <body>
-  <h1>Welcome to the contactpage of Pop1.nl, its still under construction</h1>
-  
-  <p>
-   Whatsapp 📞: <a href="https://wa.me/31617158908">
-  +31 6 17158908
-</a>
-  </p>
 
-</body>
+<div class="container">
 
-  <p> Click the link below to see what cards im looking for:
-    <a href="https://docs.google.com/spreadsheets/d/1SUQpx0raMMK86jrI-5VEiXBMl53Vd9NOrDrJdLKFNNM/edit?usp=drivesdk">
-      Open Google Sheet
+    <!-- LOGO -->
+    <div class="logo">
+        Jouw Logo
+    </div>
+
+    <h1>Pop1.nl</h1>
+
+    <p class="subtitle">
+        Welkom bij Pop1.nl.<br>
+        Deze website is momenteel nog in ontwikkeling.
+    </p>
+
+    <a class="button whatsapp" href="https://wa.me/31617158908">
+        📞 WhatsApp: +31 6 17158908
     </a>
-  </p>
+
+    <a class="button"
+       href="https://docs.google.com/spreadsheets/d/1SUQpx0raMMK86jrI-5VEiXBMl53Vd9NOrDrJdLKFNNM/edit?usp=drivesdk"
+       target="_blank">
+       📋 Bekijk mijn Pokémon Wantlist
+    </a>
+
+    <div class="footer">
+        © 2026 Pop1.nl
+    </div>
+
+</div>
+
 </body>
 </html>
